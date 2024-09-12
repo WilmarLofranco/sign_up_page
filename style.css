@@ -159,6 +159,12 @@ button {
     position: absolute;
     left: 0%;
     bottom: -100px;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: #3e8e41; /* Change color when clicked */
+    transform: scale(0.98); /* Slightly shrink the button on click */
 }
 
 input:invalid,
