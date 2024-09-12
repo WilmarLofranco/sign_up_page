@@ -24,39 +24,40 @@
             </div>
             <div class="main">
                 <h3>Let's do this!</h3>
-                <form action="">
+                <form>
                     <div class="left-form">
                         <ul>
-                            <li><label for="fname">FIRST NAME*</label></li>
-                            <li><input type="text" id="fname" name="first_name" required></li>
+                            <li><label for="fname">FIRST NAME</label></li>
+                            <li><input type="text" id="fname" name="first_name"></li>
                         </ul>
                         <ul>
-                            <li><label for="email">EMAIL*</label></li>
-                            <li><input type="email" id="e-mail" name="e-mail" required></li>
+                            <li><label for="email">EMAIL</label></li>
+                            <li><input type="email" id="e-mail" name="e-mail"></li>
                         </ul>
                         <ul>
-                            <li><label for="pw">PASSWORD*</label></li>
-                            <li><input type="password" id="pw" name="password" required></li>
+                            <li><label for="pw">PASSWORD</label></li>
+                            <li><input type="password" id="pw" name="password"></li>
                         </ul>
                     </div>
                     <div class="right-form">
                         <ul>
-                            <li><label for="lname">LAST NAME*</label></li>
-                            <li><input type="text" name="last_name" id="lname" required></li>
+                            <li><label for="lname">LAST NAME</label></li>
+                            <li><input type="text" name="last_name" id="lname"></li>
                         </ul>
                         <ul>
-                            <li><label for="phone"></label>PHONE NUMBER*</li>
-                            <li><input type="tel" id="phone" name="phone_number" required></li>
+                            <li><label for="phone"></label>PHONE NUMBER</li>
+                            <li><input type="tel" id="phone" name="phone_number" pattern="[0-9]{10}"></li>
                         </ul>
                         <ul>
-                            <li><label for="confirmPW">CONFIRM PASSWORD*</label></li>
-                            <li><input type="password" id="confirmPW" name="confirmedPW" required></li>
+                            <li><label for="confirmPW">CONFIRM PASSWORD</label></li>
+                            <li><input type="password" id="pw" name="confirmedPW"></li>
                         </ul>
                     </div>
+                    <button type="submit">Create Account</button>
                 </form>
             </div>
             <div class="footer">
-                <button type="submit">Create Account</button>
+                <br><br><br>
                 <div>Already have an account? <span class="highlight">Log in</span></div>
             </div>
             

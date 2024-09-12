@@ -81,6 +81,10 @@ body {
     padding-bottom: 3%;
 }
 
+.header > h3 {
+    font-size: 1.2rem;
+}
+
 .main {
     display: flex;
     flex-direction: column;
@@ -95,6 +99,7 @@ form {
     flex: 1;
     gap: 10px;
     padding-left: 0;
+    position: relative;
 }
 
 .left-form,
@@ -139,4 +144,32 @@ button {
 
 .highlight {
     color: #596D48;
+}
+
+label,
+input,
+button,
+div,
+h3 {
+    font-size: 1rem; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button {
+    position: absolute;
+    left: 0%;
+    bottom: -100px;
+}
+
+input:invalid,
+input:focus:invalid {
+    border-color: red;
+    border-radius: 3px;
+}
+
+input:focus {
+    border-color: blue;
+    border-radius: 3px;
+    box-shadow: 0 0 5px 2px rgba(2, 79, 245, 0.2); /* softer shadow */
+    outline: none; /* optional: removes the default outline */
 }
