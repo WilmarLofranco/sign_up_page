@@ -90,7 +90,7 @@ body {
     flex-direction: column;
     padding-top: 3%;
     padding-bottom: 2%;
-    
+    position: relative;
 }
 
 form {
@@ -99,7 +99,6 @@ form {
     flex: 1;
     gap: 10px;
     padding-left: 0;
-    position: relative;
 }
 
 .left-form,
@@ -128,7 +127,7 @@ ul {
 
 button {
     height: fit-content;
-    width: 30%;
+    width: 100%;
     padding: 10px 45px;
     margin-top: 5%;
     background-color: #596D48;
@@ -136,6 +135,7 @@ button {
     border-radius: 3px;
     border: none;
     box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 .footer > div {
@@ -155,11 +155,13 @@ h3 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-button {
+.submit-btn {
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    left: 0%;
-    bottom: -100px;
-    cursor: pointer;
+    left: 5%;
+    bottom: -45%;
+    gap: 10px;
 }
 
 button:active {
